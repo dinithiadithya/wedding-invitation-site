@@ -1,4 +1,3 @@
-/* සියලුම මූලික සැකසුම් (Reset) */
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +8,10 @@
 body {
     background-color: #f9fafb;
     color: #333;
+    scroll-behavior: smooth;
 }
 
-/* Header & Navigation Design */
+/* Header */
 header {
     background: #ffffff;
     border-bottom: 1px solid #eaeaea;
@@ -32,7 +32,6 @@ header {
 .logo {
     font-size: 1.2rem;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 nav ul {
@@ -45,7 +44,6 @@ nav ul li a {
     text-decoration: none;
     color: #555;
     font-size: 0.95rem;
-    transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -61,7 +59,6 @@ nav ul li a:hover {
 .btn-signin {
     text-decoration: none;
     color: #555;
-    font-size: 0.95rem;
 }
 
 .btn-primary {
@@ -71,16 +68,14 @@ nav ul li a:hover {
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 0.95rem;
     font-weight: bold;
-    transition: background 0.3s;
 }
 
 .btn-primary:hover {
     background-color: #b83236;
 }
 
-/* Hero Section Styling */
+/* Hero Section */
 .hero {
     display: flex;
     max-width: 1200px;
@@ -98,14 +93,12 @@ nav ul li a:hover {
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 20px;
-    color: #111;
 }
 
 .hero-content p {
     font-size: 1.1rem;
     color: #666;
     margin-bottom: 30px;
-    line-height: 1.5;
 }
 
 .hero-btns {
@@ -119,10 +112,9 @@ nav ul li a:hover {
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 0.95rem;
 }
 
-/* Phone Mockup Design */
+/* Phone Mockup */
 .phone-mockup {
     width: 280px;
     height: 550px;
@@ -142,12 +134,8 @@ nav ul li a:hover {
     background-color: #f4eee8;
     border-radius: 24px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* මඟුල් කාඩ් පත Phone screen එක ඇතුළට හරියටම පෙන්වීමට */
 .card-img-full {
     width: 100%;
     height: 100%;
@@ -155,7 +143,158 @@ nav ul li a:hover {
     border-radius: 24px;
 }
 
-/* WhatsApp Floating Button Styling */
+/* Sections General */
+.section-padding {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f1f3f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.section-padding p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Templates Grid */
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.template-card {
+    background: #fff;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+/* Steps Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.step-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.step-item h3 {
+    color: #d94246;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-weight: 600;
+}
+
+.feature-box i {
+    color: #25d366;
+    margin-right: 10px;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: #fff;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    color: #d94246;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.pricing-card ul li::before {
+    content: "✓ ";
+    color: #25d366;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #aaa;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
