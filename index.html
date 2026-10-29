@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVITATION.LK - Digital Wedding Invitations in Sri Lanka</title>
+    <title>INVITATION.LK - Digital Wedding Invitations</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- Fast Animated Floral Background Elements -->
+    <div class="floral-bg-animation">
+        <div class="floral-item f1"><i class="fa-solid fa-leaf"></i></div>
+        <div class="floral-item f2"><i class="fa-solid fa-spa"></i></div>
+        <div class="floral-item f3"><i class="fa-solid fa-seedling"></i></div>
+        <div class="floral-item f4"><i class="fa-solid fa-leaf"></i></div>
+    </div>
 
     <!-- Header / Navigation Bar -->
     <header>
@@ -21,7 +29,6 @@
                     <li><a href="#how-to-use">How to use</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -45,29 +52,54 @@
         <div class="hero-image">
             <div class="phone-mockup">
                 <div class="screen">
+                    <!-- Audio File for Card -->
+                    <audio id="card-audio" loop>
+                        <source src="wedding-music.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <!-- Card Image -->
                     <img src="card.jpg" alt="Wedding Invitation Card" class="card-img-full">
+
+                    <!-- Music Player Button INSIDE the Phone Screen -->
+                    <div class="card-music-player" id="cardMusicBtn" onclick="toggleCardMusic()">
+                        <i class="fa-solid fa-music" id="cardMusicIcon"></i>
+                        <span>Play Song</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Templates Section (Anith Page/Section) -->
+    <!-- Templates Section -->
     <section id="templates" class="section-padding">
         <div class="container">
-            <h2>41 designs. Every one a real, working invitation.</h2>
+            <h2>41+ Unique Designs. Real Working Invitations.</h2>
             <p>Poruwa, church, nikah, kovil, homecoming. Tap any card to open the live sample on your phone.</p>
+            
             <div class="templates-grid">
                 <div class="template-card">
-                    <div class="t-mockup">Poruwa Design</div>
+                    <div class="card-icon"><i class="fa-solid fa-ring"></i></div>
+                    <h3>Traditional Poruwa</h3>
+                    <p>Classic Sri Lankan cultural wedding template with elegant motifs.</p>
+                    <button class="btn-preview">Preview Live</button>
                 </div>
                 <div class="template-card">
-                    <div class="t-mockup">Church Design</div>
+                    <div class="card-icon"><i class="fa-solid fa-church"></i></div>
+                    <h3>Church Wedding</h3>
+                    <p>Sophisticated and modern layout for Christian celebrations.</p>
+                    <button class="btn-preview">Preview Live</button>
                 </div>
                 <div class="template-card">
-                    <div class="t-mockup">Nikah Design</div>
+                    <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
+                    <h3>Nikah Ceremony</h3>
+                    <p>Graceful and traditional Islamic wedding invitation style.</p>
+                    <button class="btn-preview">Preview Live</button>
                 </div>
                 <div class="template-card">
-                    <div class="t-mockup">Homecoming Design</div>
+                    <div class="card-icon"><i class="fa-solid fa-gopuram"></i></div>
+                    <h3>Kovil Celebration</h3>
+                    <p>Vibrant and traditional Hindu wedding design layout.</p>
+                    <button class="btn-preview">Preview Live</button>
                 </div>
             </div>
         </div>
@@ -124,7 +156,7 @@
                     <li>Live RSVP dashboard and link-open tracking</li>
                     <li>Google Maps, add to calendar, countdown, photo gallery</li>
                 </ul>
-                <button class="btn-primary">Get Started Free</button>
+                <button class="btn-primary" style="width: 100%;">Get Started Free</button>
             </div>
         </div>
     </section>
@@ -133,7 +165,7 @@
     <section id="contact" class="section-padding">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Or call us at <strong>+94 71 888 1 888</strong></p>
+            <p>Have questions? Call us directly at <strong>+94 71 888 1 888</strong></p>
         </div>
     </section>
 
