@@ -217,3 +217,72 @@ footer ul li a:hover { color: #fff; }
 
 .whatsapp-float:hover { transform: scale(1.05); }
 .whatsapp-float i { font-size: 1.8rem; }
+
+/* Modal Overlay Styling */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal-card-item {
+    border: 2px solid #eaeaea;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.modal-card-item:hover {
+    transform: translateY(-5px);
+    border-color: #e63946;
+}
+
+.modal-card-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal-card-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}

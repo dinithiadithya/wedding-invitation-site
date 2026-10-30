@@ -77,12 +77,12 @@
             <p>Poruwa, church, nikah, kovil, homecoming. Tap any card to open the live sample on your phone.</p>
             
             <div class="templates-grid">
-                <div class="template-card">
-                    <div class="card-icon"><i class="fa-solid fa-ring"></i></div>
-                    <h3>Traditional Poruwa</h3>
-                    <p>Classic Sri Lankan cultural wedding template with elegant motifs.</p>
-                    <button class="btn-preview">Preview Live</button>
-                </div>
+                <div class="template-card" onclick="openCardGallery()">
+    <div class="card-icon"><i class="fa-solid fa-ring"></i></div>
+    <h3>Traditional Poruwa</h3>
+    <p>Classic Sri Lankan cultural wedding template with elegant motifs.</p>
+    <button class="btn-preview">Preview Live</button>
+</div>
                 <div class="template-card">
                     <div class="card-icon"><i class="fa-solid fa-church"></i></div>
                     <h3>Church Wedding</h3>
@@ -103,6 +103,7 @@
                 </div>
             </div>
         </div>
+   
     </section>
 
     <!-- How to use Section -->
@@ -168,7 +169,30 @@
             <p>Have questions? Call us directly at <strong>+94 71 888 1 888</strong></p>
         </div>
     </section>
-
+    <!-- Cards Popup Modal Gallery -->
+<div id="cardModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeCardGallery()">&times;</span>
+        <h2>Traditional Poruwa Wedding Cards</h2>
+        <p>Select any card design to apply on your invitation site:</p>
+        
+        <div class="modal-cards-grid">
+            <div class="modal-card-item" onclick="selectCard('card1.jpg')">
+                <img src="card1.jpg" alt="Card 1">
+                <p>Design 01</p>
+            </div>
+            <div class="modal-card-item" onclick="selectCard('card2.jpg')">
+                <img src="card2.jpg" alt="Card 2">
+                <p>Design 02</p>
+            </div>
+            <div class="modal-card-item" onclick="selectCard('card3.jpg')">
+                <img src="card3.jpg" alt="Card 3">
+                <p>Design 03</p>
+            </div>
+        </div>
+    </div>
+</div>
+   
     <!-- Footer -->
     <footer>
         <div class="container footer-flex">

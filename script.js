@@ -28,3 +28,30 @@ function toggleCardMusic() {
         btnSpan.innerText = "Play Song";
     }
 }
+// Modal එක Open කරන Function එක
+function openCardGallery() {
+    document.getElementById('cardModal').style.display = 'flex';
+}
+
+// Modal එක Close කරන Function එක
+function closeCardGallery() {
+    document.getElementById('cardModal').style.display = 'none';
+}
+
+// Card එකක් touch කළාම Phone Screen එකට photo එක දාලා උඩට scroll වෙන Function එක
+function selectCard(imageName) {
+    // 1. Phone mockup එකේ තියෙන img tag එකට අලුත් photo එක සෙට් කිරීම
+    const mainCardImg = document.querySelector('.card-img-full');
+    if (mainCardImg) {
+        mainCardImg.src = imageName;
+    }
+    
+    // 2. Pop-up Modal එක වසා දැමීම
+    closeCardGallery();
+
+    // 3. Screen එක උඩ තියෙන Phone Mockup එක වෙත Smooth Scroll කිරීම
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
