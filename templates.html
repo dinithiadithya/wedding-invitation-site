@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates - INVITATION.LK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:8px;">
+                    <i class="fa-solid fa-heart" style="color: #e63946;"></i> <span>INVITATION.LK</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="templates.html" class="active">Templates</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#" class="btn-signin">Sign in</a>
+                <a href="#" class="btn-primary">Get started free</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Templates Page Content -->
+    <section class="section-padding">
+        <div class="container">
+            <h2>Explore Our Wedding Invitation Designs</h2>
+            <p>Select any template to view card details and interactive previews.</p>
+
+            <div class="templates-grid">
+                <div class="template-card" onclick="openCardGallery()">
+                    <div class="card-icon"><i class="fa-solid fa-ring"></i></div>
+                    <h3>Traditional Poruwa</h3>
+                    <p>Classic Sri Lankan cultural wedding template with elegant motifs.</p>
+                    <button class="btn-preview">View Collection</button>
+                </div>
+                <div class="template-card">
+                    <div class="card-icon"><i class="fa-solid fa-church"></i></div>
+                    <h3>Church Wedding</h3>
+                    <p>Sophisticated and modern layout for Christian celebrations.</p>
+                    <button class="btn-preview">Preview Live</button>
+                </div>
+                <div class="template-card">
+                    <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
+                    <h3>Nikah Ceremony</h3>
+                    <p>Graceful and traditional Islamic wedding invitation style.</p>
+                    <button class="btn-preview">Preview Live</button>
+                </div>
+                <div class="template-card">
+                    <div class="card-icon"><i class="fa-solid fa-gopuram"></i></div>
+                    <h3>Kovil Celebration</h3>
+                    <p>Vibrant and traditional Hindu wedding design layout.</p>
+                    <button class="btn-preview">Preview Live</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Popup for Traditional Poruwa -->
+    <div id="cardModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCardGallery()">&times;</span>
+            <h2>Traditional Poruwa Wedding Cards</h2>
+            <p>Select any card design to apply on your invitation site:</p>
+            
+            <div class="modal-cards-grid">
+                <div class="modal-card-item" onclick="selectCard('card1.jpg')">
+                    <img src="card1.jpg" alt="Card 1">
+                    <p>Design 01</p>
+                </div>
+                <div class="modal-card-item" onclick="selectCard('card2.jpg')">
+                    <img src="card2.jpg" alt="Card 2">
+                    <p>Design 02</p>
+                </div>
+                <div class="modal-card-item" onclick="selectCard('card3.jpg')">
+                    <img src="card3.jpg" alt="Card 3">
+                    <p>Design 03</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-flex">
+            <div>
+                <i class="fa-solid fa-heart" style="color: #e63946;"></i> <strong>INVITATION.LK</strong>
+                <p>Beautiful digital wedding invitations, delivered on WhatsApp.</p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="templates.html">Templates</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
